@@ -1,0 +1,74 @@
+$color1: #F4F0EC;
+$color2: #C19CCA;
+$color3: #9CC892;
+$fsizeBig: 45px;
+$fsizeMed: 35px;
+$fsizeSmall: 25px;
+.GalleryBanner{
+    font-size: $fsizeSmall;
+    font-family: "title", serif;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-right: 0%;
+    padding: 30px 2% 10px 2%;
+    width: 96%;
+    min-width: 700px;
+    height: 150px;
+    background-color: $color2;
+    display: grid;
+    grid-template-columns: 300px 75%;
+    .dropdown{
+        width: 250px;
+        text-align: right;
+        .linkDown{
+            padding-right: 4px;
+            display: grid;
+            grid-template-rows: 25% 75%;
+            margin-left: auto;
+            margin-right: 0;
+            height: 50px;
+            border-radius: 10px;
+            
+        }
+        .dropdown-content{
+            padding-right: 4px;
+            height: 300px;
+            display: none;
+            grid-template-rows: auto;
+        }
+    }
+    .logo{
+        padding-top: 15px;
+        padding-left: 20px;
+        min-width: 250px;
+        img{
+            width: 300px;
+            min-width: 250px;
+        }
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        .Anim{
+            width: 25px;
+            height: 35px;
+            float: right;
+            transition: 0s;
+        }
+    }
+    a:hover{
+        color: white;
+        transition: 0.3s;
+    }
+    .link{
+        width: 250px;
+        text-align: right;   
+    }
+    .links{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+    } 
+}

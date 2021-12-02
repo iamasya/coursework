@@ -1,0 +1,253 @@
+$color1: #F4F0EC;
+$color2: #C19CCA;
+$color3: #9CC892;
+$fsizeBig: 45px;
+$fsizeMed: 35px;
+$fsizeSmall: 25px;
+@font-face {
+    font-family: regular;
+    src: url(fonts/OldStandardTT-Regular.woff);
+}
+@font-face {
+    font-family: title;
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.woff);
+}
+
+body{
+    
+    
+    
+    .header{
+        font-size: $fsizeBig;
+        text-decoration: underline;
+        margin-top: 250px;
+        width: 50%;
+        min-width: 450px;
+        border-radius: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    font-family: "regular", serif;
+    background-color: $color1;
+    font-size: $fsizeSmall;
+    h1{
+        font-family: "title", serif;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    a{
+        color: $color3;
+        text-decoration: none;
+        cursor: pointer;
+        .Anim{
+            width: 25px;
+            height: 35px;
+            float: right;
+            transition: 0s;
+        }
+    }
+    a:hover{
+        color: $color2;
+        transition: color 0.5s;
+    }
+    
+    .NewsBanner, .GalleryBanner, .MainBanner{
+        font-family: "title", serif;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        margin-right: 0%;
+        padding: 30px 2% 10px 2%;
+        width: 96%;
+        min-width: 700px;
+        height: 150px;
+        background-color: $color2;
+        display: grid;
+        grid-template-columns: 300px 75%;
+        .dropdown{
+            
+            width: 250px;
+            text-align: right;
+            .linkDown{
+                padding-right: 4px;
+                display: grid;
+                grid-template-rows: 25% 75%;
+                margin-left: auto;
+                margin-right: 0;
+                height: 50px;
+                border-radius: 10px;
+                
+            }
+            .dropdown-content{
+                padding-right: 4px;
+                height: 300px;
+                display: none;
+                grid-template-rows: auto;
+            }
+        }
+        .logo{
+            padding-top: 15px;
+            padding-left: 20px;
+            min-width: 250px;
+            img{
+                width: 300px;
+                min-width: 250px;
+            }
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+            transition: 0.3s;
+        }
+        .link{
+            width: 250px;
+            text-align: right;   
+        }
+        .linkBack{
+            margin-top: 100px;
+            margin-right: 0px;
+            text-align: right;  
+        }
+        .links{
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-evenly;
+        } 
+    }
+
+    .NewsMain, .galleryMain, .IndexMain{
+        margin-top: 0px;
+        padding: 50px 100px 50px 100px;
+        text-align: justify;
+        .newsImage, .mainImage{
+            img{
+                width: 300px;
+            } 
+        }
+        .newsImage:hover, .mainImage:hover{
+            transform: scale(1.1);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .mainImage{
+            float: left;
+            padding: 10px 30px 10px 10px;
+        }
+        div#image1, div#image3{
+            float: left;
+            padding: 10px 30px 10px 10px;
+        }
+        div#image2{
+            float: right;
+            padding: 10px 10px 10px 30px;
+        }  
+    }
+    .galleryMain{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        .photo{
+            padding: 10px;
+            img{
+                width: 300px;
+            }
+        }
+        .photo:hover{
+            transform: scale(1.1);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+    .IndexMain{
+        display: grid;
+        .new{
+            padding-top: 0px; 
+            padding-bottom: 100px;
+        }
+        time{
+            font-style: italic;
+        }
+        h1{
+            font-size: $fsizeMed;
+            color: black;
+        }
+        h1:hover{
+            color: $color3;
+            transition: 0.3s;
+        }
+        .line{
+            background-color: $color2;
+            width: 90%;
+            height: 7px;
+            margin-bottom: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .NewsMain{
+        margin-top: 150px;
+        h1{
+            font-size: $fsizeBig;
+        } 
+    }
+    footer{
+        margin: 0% 0% auto auto;
+        text-align: right;
+        font-size: 15px;
+    }
+    .openImg{
+        background-color: rgba(126, 126, 126, 0.85);
+        position: fixed;
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 5% 95%;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        img{
+            max-width: 100%;
+            max-height: 90%;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            grid-column: 2;
+            grid-row: 2;
+        }
+        .exitBtn, .prevBtn, .nextBtn{
+            cursor: pointer;
+            color: black;
+            font-size: 50px;
+        }
+        .exitBtn:hover, .prevBtn:hover, .nextBtn:hover{
+            color: white;
+            transition: 0.3s;
+        }
+        .exitBtn{
+            grid-row: 1;
+            grid-column: 1 / 4;
+            padding-top: 40px;
+            padding-right: 50px;
+            text-align: right;
+        }
+        .prevBtn, .nextBtn{
+            grid-row: 2;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+        .prevBtn{
+            grid-column: 1;
+        }
+        .nextBtn{
+            grid-column: 3;
+        }
+    }
+}

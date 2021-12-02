@@ -1,0 +1,44 @@
+$color1: #F4F0EC;
+$color2: #C19CCA;
+$color3: #9CC892;
+$fsizeBig: 45px;
+$fsizeMed: 35px;
+$fsizeSmall: 25px;
+    .mainImage:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .new{
+        padding-top: 0px; 
+        padding-bottom: 100px;
+    }
+    time{
+        font-style: italic;
+    }
+    h1{
+        font-size: $fsizeMed;
+        color: black;
+    }
+    h1:hover{
+        color: $color3;
+        transition: 0.3s;
+    }
+    .line{
+        position: relative;
+        background-color: $color2;
+        width: 90%;
+        height: 7px;
+        margin-top: 180px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainImage{
+        float: left;
+        padding: 10px 30px 10px 10px;
+        margin-bottom: 30px;
+        img{
+            width: 300px;
+        }
+    }

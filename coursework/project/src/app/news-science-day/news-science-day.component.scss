@@ -1,0 +1,32 @@
+$color1: #F4F0EC;
+$color2: #C19CCA;
+$color3: #9CC892;
+$fsizeBig: 45px;
+$fsizeMed: 35px;
+$fsizeSmall: 25px;
+.NewsMain{
+    margin-top: 150px;
+    h1{
+        font-size: $fsizeBig;
+    } 
+    padding: 50px 100px 50px 100px;
+    text-align: justify;
+    .newsImage{
+        img{
+            width: 300px;
+        } 
+    }
+    .newsImage:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    div#image1, div#image3{
+        float: left;
+        padding: 10px 30px 10px 10px;
+    }
+    div#image2{
+        float: right;
+        padding: 10px 10px 10px 30px;
+    } 
+}

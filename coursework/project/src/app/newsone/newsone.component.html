@@ -1,0 +1,10 @@
+<div *ngIf="news">
+<time >{{news.time}}</time>
+<a routerLink="{{news.link}}"><h1>{{news.title}}</h1></a>
+    <div class="mainImage" id="hate"><a href="{{news.img}}" target="_blank">
+        <img src="{{news.img}}"></a>
+    </div>
+    <div>{{news.text}}</div><br><br>
+<a routerLink="{{news.link}}">Дізнатися більше ▶</a>
+</div><br><br>
+<div class="line"></div>

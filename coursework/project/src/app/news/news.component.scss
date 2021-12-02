@@ -1,0 +1,23 @@
+$color1: #F4F0EC;
+$color2: #C19CCA;
+$color3: #9CC892;
+$fsizeBig: 45px;
+$fsizeMed: 35px;
+$fsizeSmall: 25px;
+.header{
+    font-size: $fsizeBig;
+    text-decoration: underline;
+    margin-top: 250px;
+    width: 50%;
+    min-width: 450px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.IndexMain{
+    display: grid;
+    margin-top: 0px;
+    padding: 50px 100px 50px 100px;
+    text-align: justify;
+}

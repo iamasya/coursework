@@ -1,0 +1,13 @@
+<app-bannergal></app-bannergal>
+<div class="header"><h1>Галерея</h1></div>
+    <section class="galleryMain" id="galleryMain">
+        <!-- <div class="photo"><img src="assets/gallery/photo1.jpg"></div>
+        <div class="photo"><img src="assets/gallery/photo3.jpg"></div>
+        <div class="photo"><img src="assets/gallery/photo5.jpg"></div>
+        <div class="photo"><img src="assets/gallery/photo8.jpg"></div>
+        <div class="photo"><img src="assets/gallery/photo12.jpg"></div>
+        <div class="photo"><img src="assets/gallery/photo1.jpg"></div>
+        <div class="photo"><img src="assets/gallery/photo3.jpg"></div>
+        <div class="photo"><img src="assets/gallery/photo1.jpg"></div> -->
+        <app-pic *ngFor="let i of picList" [gallery]="i"></app-pic>
+    </section>
